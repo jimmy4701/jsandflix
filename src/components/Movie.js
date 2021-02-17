@@ -54,11 +54,10 @@ const ActionsContainer = styled.div`
     display: none;
     width: 100%;
     color: white;
+    padding: 1em 0 ;
 
-    svg {
-        height: 2.3em;
-        width: 2.3em;
-        margin: 0.5em;
+    .logo-button {
+        margin: 0 0.5em 0 ;
     }
 `
 

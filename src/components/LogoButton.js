@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const LogoButton = (props) => {
     return(
-        <Container {...props}>
+        <Container {...props} className="logo-button">
             {props.children}
         </Container>
     )
@@ -21,6 +21,11 @@ const Container = styled.div`
     cursor: pointer;
     color: white;
     background-color: ${colors.dark_grey};
+
+    svg {
+        height: 2.3em;
+        width: 2.3em;
+    }
 
     &:hover {
         border: 2px solid black;
