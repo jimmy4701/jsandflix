@@ -32,6 +32,7 @@ const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     padding: 0 0 0 3em;
+    margin-bottom: -7em;
 `
 
 const Type = styled.div`

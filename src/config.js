@@ -11,6 +11,42 @@ export const movies = [
         netflix: true,
         type: "Série",
         image: "https://wallpaperaccess.com/full/1161691.jpg",
-        categories: ["romantique"]
-    }
+        categories: ["romantique"],
+    },
+    {
+        title: "Avengers",
+        description: "Un film de super heros avec plein de gens qui ont des pouvoirs.",
+        netflix: true,
+        type: "Série",
+        image: "https://images5.alphacoders.com/998/thumb-1920-998470.jpg",
+        categories: ["romantique"],
+        top: true
+    },
+    {
+        title: "Avengers",
+        description: "Un film de super heros avec plein de gens qui ont des pouvoirs.",
+        netflix: true,
+        type: "Série",
+        image: "https://images5.alphacoders.com/998/thumb-1920-998470.jpg",
+        categories: ["romantique"],
+        top: true
+    },
+    {
+        title: "Avengers",
+        description: "Un film de super heros avec plein de gens qui ont des pouvoirs.",
+        netflix: true,
+        type: "Série",
+        image: "https://images5.alphacoders.com/998/thumb-1920-998470.jpg",
+        categories: ["romantique"],
+        top: true
+    },
+    {
+        title: "Avengers",
+        description: "Un film de super heros avec plein de gens qui ont des pouvoirs.",
+        netflix: true,
+        type: "Série",
+        image: "https://images5.alphacoders.com/998/thumb-1920-998470.jpg",
+        categories: ["romantique"],
+        top: true
+    },
 ]
