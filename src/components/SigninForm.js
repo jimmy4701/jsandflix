@@ -11,7 +11,7 @@ const SigninForm = (props) => {
             <CustomForm>
                 <Input rounded dark placeholder="E-mail ou numéro de téléphone" />
                 <Input rounded dark placeholder="Mot de passe" />
-                <Button>S'identifier</Button>
+                <Button color="red">S'identifier</Button>
             </CustomForm>
             <LinksContainer>
                 <Remember>
@@ -44,12 +44,14 @@ const CustomForm = styled.div`
 `
 
 const LinksContainer = styled.div`
-    
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 1em;
 `
 
 const Remember = styled.div`
     display: flex;
-    padding-top: 1em;
 
     p {
         margin: 0 0 0 0.5em;;
