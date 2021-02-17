@@ -4,6 +4,8 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 import styled from 'styled-components'
 import LandingInfo from '../components/LandingInfo'
+import {Hero, Overlay} from '../components/Hero'
+import { Link } from 'react-router-dom'
 
 const Landing = (props) => {
     return(
@@ -12,9 +14,11 @@ const Landing = (props) => {
             <Hero>
                 <CustomNavbar>
                     <Logo height="3em"/>
-                    <Button color="red">S'identifier</Button>
+                    <Link to="/signin">
+                        <Button color="red">S'identifier</Button>
+                    </Link>
                 </CustomNavbar>
-                <Overlay>
+                <Overlay center>
                     <h1>Films, séries TV et bien<br/>plus en illimité.</h1>
                     <h2>Où que vous soyez. Annulez à tout moment</h2>
                     <p>Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
@@ -57,33 +61,7 @@ const CustomNavbar = styled.div`
     z-index: 100;
 `
 
-const Hero = styled.div`
-    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8ef88e03-6f89-4c75-ae51-f8da7d252358/cc4aac7c-7f98-467d-a8eb-dbdd892ccc0d/FR-fr-20210208-popsignuptwoweeks-perspective_alpha_website_large.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-`
 
-const Overlay = styled.div`
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    
-    h1 {
-        color: white;
-        font-size: 5em;
-        margin: 0;
-    }
-
-    h2, p {
-        color: white;
-    }
-`
 
 const InputContainer = styled.div`
     display: flex;
