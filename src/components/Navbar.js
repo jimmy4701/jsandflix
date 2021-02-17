@@ -1,6 +1,10 @@
 import React from 'react'
 import Logo from './Logo'
 import styled from 'styled-components'
+import { FaSearch, FaBell } from 'react-icons/fa'
+import { HiOutlineGift } from 'react-icons/hi'
+import Avatar from '../components/Avatar'
+import {profiles} from '../config'
 
 const Navbar = (props) => {
     return(
@@ -15,13 +19,27 @@ const Navbar = (props) => {
                 <NavbarLink>Revoir</NavbarLink>
             </LeftPart>
             <RightPart>
-
+                <NavbarLink active><FaSearch /></NavbarLink>
+                <NavbarLink>DIRECT</NavbarLink>
+                <NavbarLink>JEUNESSE</NavbarLink>
+                <NavbarLink active><HiOutlineGift  /></NavbarLink>
+                <NavbarLink active><FaBell  /></NavbarLink>
+                <NavbarLink active><Avatar image={profiles[0].image}  /></NavbarLink>
             </RightPart>
         </Container>
     )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+        height: 1.3em;
+        width: 1.3em;
+    }
+`
 const CustomLogo = styled(Logo)`
     margin: 0 1em 0 2em;
 `
@@ -31,7 +49,12 @@ const LeftPart = styled.div`
     align-items: center;
     justify-content: flex-start ;
 `
-const RightPart = styled.div``
+const RightPart = styled.div`
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+`
 const NavbarLink = styled.div`
     color: white;
     margin: 0 1em;
