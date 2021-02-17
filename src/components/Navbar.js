@@ -5,12 +5,15 @@ import { FaSearch, FaBell } from 'react-icons/fa'
 import { HiOutlineGift } from 'react-icons/hi'
 import Avatar from '../components/Avatar'
 import {profiles} from '../config'
+import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
     return(
         <Container {...props}>
             <LeftPart>
-                <CustomLogo height="2.5em" />
+                <Link to="/">
+                    <CustomLogo height="2.5em" />
+                </Link>
                 <NavbarLink active>Accueil</NavbarLink>
                 <NavbarLink>Séries</NavbarLink>
                 <NavbarLink>Films</NavbarLink>

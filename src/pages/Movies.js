@@ -8,7 +8,7 @@ const Movies = (props) => {
     return(
         <>
             <Navbar />
-            <MovieHero movie={movies[0]} />
+            <MovieHero movie={movies[1]} />
             <MoviesList movies={movies} title="Ma Liste" />
         </>
     )

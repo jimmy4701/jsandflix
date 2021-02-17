@@ -4,7 +4,7 @@ import colors from '../utils/colors'
 
 const Logo = (props) => {
     return(
-        <CustomLogo {...props}>JsFlix</CustomLogo>
+        <CustomLogo {...props}>Netflux</CustomLogo>
     )
 }
 
