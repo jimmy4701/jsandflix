@@ -14,6 +14,12 @@ const CustomLogo = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -0.05em;
+
+    ${props => props.absolute && `
+        position: absolute;
+        top: 0.2em;
+        left: 1em;
+    `}
 `
 
 export default Logo

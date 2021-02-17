@@ -11,7 +11,7 @@ const SigninForm = (props) => {
 
     const goMovies = useCallback((e) => {
         e.preventDefault()
-        history.push('/movies')
+        history.push('/browse')
     }, [])
     
     return(
