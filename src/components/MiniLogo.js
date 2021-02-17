@@ -4,7 +4,7 @@ import colors from '../utils/colors'
 
 const MiniLogo = (props) => {
     return(
-        <CustomLogo {...props}>N</CustomLogo>
+        <CustomLogo {...props} className="mini-logo">N</CustomLogo>
     )
 }
 
