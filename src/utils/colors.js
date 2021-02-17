@@ -1,4 +1,4 @@
-export const red = "#e50914"
+export const red = "#e20813"
 export const black = "#141414"
 
 export default {
