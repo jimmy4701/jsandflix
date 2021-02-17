@@ -1,14 +1,23 @@
-import React from 'react'
+import React, {useCallback} from 'react'
 import Input from './Input'
 import Button from './Button'
 import styled from 'styled-components'
 import colors from '../utils/colors'
+import { useHistory } from 'react-router-dom'
 
 const SigninForm = (props) => {
+
+    const history = useHistory()
+
+    const goMovies = useCallback((e) => {
+        e.preventDefault()
+        history.push('/movies')
+    }, [])
+    
     return(
         <Container>
             <h2>S'identifier</h2>
-            <CustomForm>
+            <CustomForm onSubmit={goMovies}>
                 <Input rounded dark placeholder="E-mail ou numéro de téléphone" />
                 <Input rounded dark placeholder="Mot de passe" />
                 <Button color="red">S'identifier</Button>
@@ -33,7 +42,7 @@ const Container = styled.div`
     padding: 3em;
 `
 
-const CustomForm = styled.div`
+const CustomForm = styled.form`
     display: flex;
     flex-direction: column;
     min-width: 20vw;
