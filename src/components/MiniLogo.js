@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import colors from '../utils/colors'
 
-const Logo = (props) => {
+const MiniLogo = (props) => {
     return(
-        <CustomLogo {...props}>JsFlix</CustomLogo>
+        <CustomLogo {...props}>N</CustomLogo>
     )
 }
 
 const CustomLogo = styled.div`
     color: ${colors.red};
-    font-size: ${props => props.height || "2em"};
+    font-size: ${props => props.height || "4em"};
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -0.05em;
@@ -22,4 +22,4 @@ const CustomLogo = styled.div`
     `}
 `
 
-export default Logo
+export default MiniLogo

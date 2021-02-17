@@ -8,7 +8,7 @@ import {profiles} from '../config'
 
 const Navbar = (props) => {
     return(
-        <Container>
+        <Container {...props}>
             <LeftPart>
                 <CustomLogo height="2.5em" />
                 <NavbarLink active>Accueil</NavbarLink>
@@ -34,6 +34,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
     svg {
         height: 1.3em;
